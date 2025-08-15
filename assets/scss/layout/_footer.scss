@@ -1,4 +1,25 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+    background-color: $neutral;
+}
+
+.footer-container{
+    padding: 92.5px 0px;
+}
+.footer-img{
+    width: 270px;
+    height: 45px;
+}
+
+@media(max-width:576px){
+    .footer-container{
+    padding: 80px 12px;
+}
+.footer-img{
+    width: 192px;
+    height: 32px;
+    margin-bottom: 40px;
+}
+.my-mb-40{
+    margin-bottom: 40px;
+}
 }

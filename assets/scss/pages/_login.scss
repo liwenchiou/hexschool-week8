@@ -1,0 +1,49 @@
+.swiper{
+    max-width:700px;
+    // height: auto;
+    padding: 40px 0px;
+    padding-left: 40px;
+}
+.swiper-slide{
+height: auto;
+// width: 600px;
+}
+
+img{
+  display: block;
+  width: 600px;
+  height: 1000px;
+//   object-fit:cover;
+  
+}
+
+.login-btn{
+    border-radius: 12px;
+    border: 1px solid $neutral-40;
+}
+
+.login-container2{
+    max-width: 604px;
+}
+
+.login-btn2{
+    background-color: $neutral-40;
+    color: $neutral-60;
+}
+
+.login-btn3{
+font-weight: 600;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+
+@media(max-width:576px){
+    .login-container2{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .mb-125{
+        margin-bottom: 24px;
+    }
+    
+}

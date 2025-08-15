@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+/* 標籤的基本樣式 */
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: $neutral-15;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.outline{
+    outline:1px solid red;
+}
+
+@mixin heading-style($weight,$size,$height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: 0.02em;
+  color: $neutral;
+}
+
+.display{
+    @include heading-style(700,72px,1.2);
+}
+
+.h1{
+    @include heading-style(700,48px,1.2);
+}
+
+.h2{
+    @include heading-style(700,40px,1.2);
+}
+
+.h3{
+    @include heading-style(700,32px,1.2);
+}
+
+.h4{
+    @include heading-style(700,28px,1.2);
+}
+
+.h5{
+    @include heading-style(700,24px,1.2);
+}
+
+.h6{
+    @include heading-style(700,20px,1.2);
+}
+
+.title{
+    @include heading-style(700,16px,1.5);
+}
+
+.subtitle{
+    @include heading-style(700,14px,1.5);
+}
+
+.body{
+    @include heading-style(400,16px,1.5);
+    color: $neutral-80;
+}
+
+.body2{
+    @include heading-style(400,14px,1.5);
+    color: $neutral-80;
+}
+
+.tiny{
+    @include heading-style(400,12px,1.5);
+}
+
+.icon-img-18{
+    width: 18px;
+    height: 18px;
+}
+
+.icon-img-24{
+    width: 24px;
+    height: 24px;
+}
+.icon-img-40{
+    width: 40px;
+    height: 40px;
+}
+
+.p{
+    &-75{
+        padding:$spacer*0.75;
+    }
+    &s-75{
+        padding-left: $spacer*0.75;
+    }
+    &e-75{
+        padding-right: $spacer*0.75;
+    }
+    &x-75{
+        padding-left: $spacer*0.75;
+        padding-right: $spacer*0.75;
+    }
+    &y-75{
+        padding-top: $spacer*0.75;
+        padding-bottom: $spacer*0.75;
+    }
+    &y-175{
+        padding-top: $spacer*1.75;
+        padding-bottom: $spacer*1.75;
+    }
+    &y-125{
+        padding-top: $spacer*1.25;
+        padding-bottom: $spacer*1.25;
+    }
+    &y-400{
+        padding-top: $spacer*4;
+        padding-bottom: $spacer*4;
+    }
+}
+
+.m{
+    &b-40{
+        margin-bottom: 40px;
+    }
+    &b-80{
+        margin-bottom: 80px;
+    }
+    &b-125{
+        margin-bottom: $spacer*2.5;
+    }
+    &s-25{
+        margin-left: $spacer*0.25;
+    }
+}
+
+.border-radius-24{
+    border-radius: 24px;
+}
