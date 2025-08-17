@@ -10,11 +10,11 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  <script type="module" crossorigin src="/hexschool-week8/assets/main-C9S3uHFY.js"></script>
-  <link rel="stylesheet" crossorigin href="/hexschool-week8/assets/main-kLNnN458.css">
+  <script type="module" crossorigin src="/hexschool-week8/assets/main-DhTG7HQc.js"></script>
+  <link rel="stylesheet" crossorigin href="/hexschool-week8/assets/main-1HoHhCmz.css">
 </head>
 
-<body class="p-md-0 px-75">
+<body class="p-md-0 px-75 index-body">
   <header class="border-bottom border-1">
     <div class="container mx-auto ">
 
@@ -26,25 +26,7 @@
 
 
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="d-flex align-items-center bg-white border head-search-group w-100">
-                        <span class="material-symbols-outlined icon-img-24 me-1">
-                            search
-                        </span>
-                        <input type="text" class="header-search w-100" placeholder="搜尋景點、地點或城市" aria-label="Username"
-                            aria-describedby="basic-addon1">
-                    </div>
-                    <!-- <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
-                    <div class="col-6 d-flex align-items-center justify-content-end">
-                        <a href="#" class="me-3 border-0 "><span class="material-symbols-outlined icon-img-24 ">
-                                shopping_cart
-                            </span></a>
-                        <a href="login.html" class="btn btn-primary text-white title">登入 / 註冊</a>
-                    </div>
-                </div>
+
                 <div class="d-flex align-items-center">
                     <button class="border-0 icon-img-40" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -67,6 +49,25 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                </div>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-md-flex align-items-center bg-white border head-search-group w-100  d-none">
+                        <span class="material-symbols-outlined icon-img-24 me-1">
+                            search
+                        </span>
+                        <input type="text" class="header-search w-100" placeholder="搜尋景點、地點或城市" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                        <a href="#" class="me-3 border-0 d-none d-md-block"><span class="material-symbols-outlined icon-img-24 ">
+                                shopping_cart
+                            </span></a>
+                        <a href="login.html" class="btn btn-primary text-white title">登入 / 註冊</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -92,13 +93,13 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container mx-auto">
       <div class="row py-75 bg-white  border-radius-24 mb-4">
         <div class="col border-end py-125 text-md-start text-center">我的帳號</div>
         <div class="col border-end py-125 text-md-start text-center">訂單管理</div>
         <div class="col py-125 text-md-start text-center">我的收藏</div>
       </div>
-      <div class="row py-400 ps-5 bg-white  border-radius-24">
+      <div class="row py-400 px-5 bg-white  border-radius-24">
         <h2 class="mb-40">我的帳號</h2>
         <!-- Nav tabs -->
         <ul class="nav  mb-4 border-bottom" id="myTab" role="tablist">
@@ -118,8 +119,9 @@
         </ul>
 
         <!-- Tab panes -->
-        <div class="tab-content mb-40">
-          <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="tab-content">
+
+          <div class="tab-pane " id="home" role="tabpanel" aria-labelledby="home-tab">
             <p class="body mb-2">姓名</p>
             <p class="h6 mb-4">Jessica Yen</p>
             <p class="body mb-2">電子信箱</p>
@@ -131,19 +133,131 @@
             <p class="body mb-2">地址</p>
             <p class="h6 mb-4">台北市士林區幸福路193號5樓之1</p>
             <p class="body mb-2">生日</p>
-            <p class="h6">1995-09-20</p>
+            <p class="h6 mb-40">1995-09-20</p>
+
             <div class="text-end">
-              <a name="" id="" class="btn btn-outline-primary text-primary  w-100" href="#" role="button">
-                <p class=" align-items-center d-flex body text-center w-100"><span class="material-symbols-outlined icon-img-24 me-2">
+              <a name="" id="" class="btn btn-outline-primary text-primary p-0 border-radius-12  under-btn " href="#"
+                role="button">
+                <p
+                  class=" align-items-center d-flex body text-center w-100 p-1-btn py-3 px-5 border-radius-12 justify-content-center">
+                  <span class="material-symbols-outlined icon-img-24 me-2">
                     edit
-                  </span>編輯資訊</p>
+                  </span>編輯資訊
+                </p>
               </a>
+            </div>
+
+          </div>
+
+          <div class="tab-pane active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="d-flex p-md-4 p-3 border border-radius-20 bg-white mb-75 flex-column flex-md-row">
+              <div class="d-flex flex-row justify-content-start align-items-center mb-3">
+                <img src="/hexschool-week8/assets/avatar-1-cp2HwrEX.png" alt="avatar-1" class="icon-img-40 me-2">
+                <p class="h6">Jessica Yen</p>
+              </div>
+
+              <div class="text-end w-100  edit-btn d-block d-flex d-md-none">
+                <a name="" id="" class="btn btn-outline-primary text-primary p-0 border-radius-12 me-2" href="#"
+                  role="button">
+                  <p
+                    class=" align-items-center d-flex title text-primary text-center w-100 p-1-btn py-3 px-md-5 border-radius-12">
+                    <span class="material-symbols-outlined icon-img-24 me-2">
+                      edit
+                    </span>編輯資訊
+                  </p>
+                </a>
+                <a name="" id="" class="btn btn-outline-primary text-primary p-0 border-radius-12" href="#"
+                  role="button">
+                  <p
+                    class=" align-items-center d-flex title text-primary text-center w-100 p-1-btn py-3 px-md-5 border-radius-12">
+                    <span class="material-symbols-outlined icon-img-24">
+                      edit
+                    </span>刪除
+                  </p>
+                </a>
+              </div>
 
             </div>
+            <div class="d-flex align-items-md-center align-items-start p-md-4 p-3 border border-radius-20 bg-white s_mb-75 flex-md-row flex-column">
+              
+              <div class="me-2 d-flex align-items-center mb-3">
+                <img src="/hexschool-week8/assets/avatar-2-Bso7ct1Q.jpg" alt="avatar-2"
+                  class="icon-img-40 rounded-circle img-fluid me-2 d-block">
+                  <p class="h6 mb-2 d-flex d-md-none">Jenny Lin</p>
+              </div>
+
+
+              <!-- <div class="text-nowrap">
+                <p class="h6 mb-2">Jenny Lin</p>
+                <p class="h6 mb-2">Jenny Lin</p>
+                <p class="h6 mb-2">Jenny Lin</p>
+              </div> -->
+
+              <!-- <div
+                class="text-nowrap">
+                <p class="h6 mb-2">Jenny Lin</p>
+                <p class="body text-primary d-flex mb-1 d-none d-md-block"><span
+                    class="material-symbols-outlined icon-img-16 me-2">
+                    cake
+                  </span> Jenny.Linnn@gmail.com</p>
+                <p class="body text-primary d-flex d-none d-md-block ">
+                  <span class="material-symbols-outlined icon-img-16 me-2">
+                    mail
+                  </span>2001.01.30
+                </p>
+              </div> -->
+
+              <div
+                class="d-flex flex-column text-nowrap d-none d-md-block">
+                <p class="h6 mb-2">Jenny Lin</p>
+                <p class="body text-primary d-flex mb-1 d-none d-md-block"><span
+                    class="material-symbols-outlined icon-img-16 me-2">
+                    cake
+                  </span> Jenny.Linnn@gmail.com</p>
+                <p class="body text-primary d-flex d-none d-md-block ">
+                  <span class="material-symbols-outlined icon-img-16 me-2">
+                    mail
+                  </span>2001.01.30
+                </p>
+              </div>
+
+              <div class="text-end w-100  edit-btn d-md-block d-flex">
+                <a name="" id="" class="btn btn-outline-primary text-primary p-0 border-radius-12 me-2" href="#"
+                  role="button">
+                  <p
+                    class=" align-items-center d-flex title text-primary text-center w-100 p-1-btn py-3 px-md-5 border-radius-12">
+                    <span class="material-symbols-outlined icon-img-24 me-2">
+                      edit
+                    </span>編輯資訊
+                  </p>
+                </a>
+                <a name="" id="" class="btn btn-outline-primary text-primary p-0 border-radius-12" href="#"
+                  role="button">
+                  <p
+                    class=" align-items-center d-flex title text-primary text-center w-100 p-1-btn py-3 px-md-5 border-radius-12">
+                    <span class="material-symbols-outlined icon-img-24">
+                      edit
+                    </span>刪除
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="text-end ">
+              <a name="" id="" class="btn btn-outline-primary text-primary p-0 border-radius-12 under-btn text-center"
+                href="#" role="button">
+                <p
+                  class="align-items-center d-flex body text-center w-100 p-1-btn py-3 px-md-5 border-radius-12 justify-content-center">
+                  <span class="material-symbols-outlined icon-img-24 me-2 ">
+                    add
+                  </span>
+                  新增常用旅客
+                </p>
+              </a>
+            </div>
+
+
           </div>
-          <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            profile
-          </div>
+
         </div>
 
 
