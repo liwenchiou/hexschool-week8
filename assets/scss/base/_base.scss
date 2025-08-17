@@ -96,7 +96,10 @@ p {
 .tiny{
     @include heading-style(400,12px,1.5);
 }
-
+.icon-img-16{
+    width: 16px;
+    height: 16px;
+}
 .icon-img-18{
     width: 18px;
     height: 18px;
@@ -147,9 +150,13 @@ p {
     &b-40{
         margin-bottom: 40px;
     }
+    &b-75{
+        margin-bottom: $spacer*0.75;
+    }
     &b-80{
         margin-bottom: 80px;
     }
+    
     &b-125{
         margin-bottom: $spacer*2.5;
     }
@@ -157,7 +164,12 @@ p {
         margin-left: $spacer*0.25;
     }
 }
-
+.border-radius-12{
+    border-radius: 12px;
+}
+.border-radius-20{
+    border-radius: 20px;
+}
 .border-radius-24{
     border-radius: 24px;
 }
